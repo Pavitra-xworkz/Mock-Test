@@ -1,0 +1,199 @@
+1 ans: compiletime error=missing paranthesis,print the value of variable without declare it,missing semicolon.
+       runtime error=error occur during program execution,divide nomber by zero .
+	   
+2 ans:3 types of variables in java: local, instance and static. There are two types of data types in java: primitive and non-primitive.
+      * local variable ex:
+	   int area(){
+        int length=10; //local variable
+        int breadth = 5; //local variable
+        int rectarea = length*breadth; //local variable
+        return rectarea;
+        }
+	  
+	  *Instance Variable ex:
+	  class Taxes {
+          int count; //Count is an Instance variable
+      }
+	  
+	  * static variable Ex:
+	  class Variable{
+       static int count=0;
+   }
+
+3 ans:public class Wrapper{
+public static void main(String[] args)
+{
+System.out.println("JVM invoked main method");
+System.out.println("The Program will convert String to number");
+
+ String alphabetsInEnglish="26";
+ byte convertedAlphabetsInEnglish=Byte.parseByte(alphabetsInEnglish);
+ System.out.println("converted byte: "+convertedAlphabetsInEnglish);
+ 
+ String statesOfKarnataka="29";
+ short convertedStatesOfKarnataka=Short.parseShort(statesOfKarnataka);
+ System.out.println("converted short: "+convertedStatesOfKarnataka);
+ 
+ String secondsInADay="86400";
+ int convertedSecondsInADay=Integer.parseInt(secondsInADay);
+ System.out.println("converted int: "+convertedSecondsInADay);
+ 
+ String numberOfOrpansInIndia="29600000";
+ long convertedNumberOfOrpansInIndia=Long.parseLong(numberOfOrpansInIndia);
+ System.out.println("converted long: "+convertedNumberOfOrpansInIndia);
+ 
+ String valueOfRootThree="1.732f";
+ float convertedValueOfRootThree=Float.parseFloat(valueOfRootThree);
+ System.out.println("converted float: "+convertedValueOfRootThree);
+ 
+ String valueOfPi="3.141592653589793238";
+ double convertedValueOfPi=Double.parseDouble(valueOfPi);
+ System.out.println("converted double: "+convertedValueOfPi);
+ 
+ String twoIsAPrimeNumber="true";
+ boolean convertedTwoIsAPrimeNumber=Boolean.parseBoolean(twoIsAPrimeNumber);
+ System.out.println("converted boolean: "+convertedTwoIsAPrimeNumber);
+ 
+ String grade="B";
+ char convertedGrade=grade.charAt(0);
+ System.out.println("converted char: "+convertedGrade);
+ 
+ System.out.println("Exit :: main");
+ }
+ }
+  
+ 4 ans:Method is a collection of statements, which is  used to perform logic/ or used to write some code , Methods allow us to re-use statements 
+  public class Respect{
+public static void main(String[] hi)
+{
+	greet();
+}
+public static void greet()
+{
+	System.out.println("Welcome");
+}
+
+}
+*parameter-Parameters act as variables inside the method. Parameters are specified after the method name, inside the parentheses.
+public static void main(String[] args) hear args is parameter.
+*argument-argument is a value passed to a method when the method is called. Whenever any method is called during the execution of the program there are some values passed with the method. These values are called arguments.
+public int mult(intx,inty) hear x and y are arguments
+*return type-the return type defines and constrains the data type of the value returned from a subroutine or method.
+public class LifeCycle
+{
+	
+	public static String agetype(int age)
+	{
+		System.out.println("Jvm invoked age");
+		System.out.println("age :"+age);
+		
+		if(age>=1 &&age<=6)
+		{
+			System.out.println("the return value is:" +age);
+			return "kids";
+		}
+		
+		if(age>=6 && age<=13)
+		{
+			System.out.println("the return value is:" +age);
+			return "child";
+		}
+	return "Immortal";
+	}
+}
+5 ans:the process of binding data and corresponding methods  together into a single unit is called encapsulation.Hides the fine details of the inner working of class which is called as information hiding
+	public class mobile{
+	
+	
+	private static int cost=8000;
+	
+	public static int getcost()
+	{
+		System.out.println("cost is read only");
+		return cost;
+	}
+	
+}
+6 ans:
+An array is a data structure, which can store a fixed-size collection of elements of the same data type.
+public class Grade{
+public static void main(String[] args)
+{
+arrayOfGrade();
+}
+public static void arrayOfGrade()
+{
+char marksBetween 1To30='F';
+char marksBetween 35To45='E';
+char marksBetween 45To55='C';
+char marksBetween 55To65='D';
+char marksBetween 65To75='B';
+char marksBetween 75To85='A';
+char marksBetween 85To95='s';
+char marksBetween71To80='s+';
+
+char[] allmarks = { marksBetween 1To30='F',marksBetween 35To45='E',marksBetween 45To55='C',marksBetween 55To65='B',marksBetween 65To75='D',char marksBetween 65To75='B',char marksBetween71To80='s+'};
+int countOfArray=allmarks.length;
+System.out.println("The length of Array is " + countOfArray); 
+ 
+ 
+7 ans:
+public class MailsIds{
+public static void main(String[] mail)
+{
+arrayOfEmail();
+}
+public static void arrayOfEmail()
+{
+	String contactEmail="contact@xworkz.in";
+	String subscribeEmail="subscribe@xworkz.in";
+	String hrEmail="hr@xworkz.in";
+	String[] emails={contactEmail,subscribeEmail,hrEmail,};
+int countOfArray=emails.length;
+System.out.println("The length of Array is " + countOfArray);
+String elementAtIndex1=emails[1];
+String elementAtIndex2=emails[2];
+String elementAtIndex3=emails[3];
+
+System.out.println("The element at index one is: " + emails[1]); 
+System.out.println("The element at index two is: " + emails[2]); 
+System.out.println("The element at index three is:"+ emails[3]); 
+
+}
+}
+8 ans:
+Two or more methods can have same name if they differ in parameters,These methods are called overloaded methods and this feature is called method overloading. 
+The methods have the same signature but accept different arguments.add(int, int),add(int, float)
+
+* class Information
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Invoked by JVM");
+		Info("Pavi");
+		lnfo("Hubballi")
+		Info("O");	
+	}
+	
+	public static void info(String nameOfCandiateandiate)
+	{
+		System.out.println("The Candiatename is :"+nameOfCandiate);
+
+	}
+	
+	public static void info(String AddressOfCandiate)
+	{
+		System.out.println("The AddressOfCandiate is:" +AddressOfCandiate);
+		
+	}
+	
+}
+
+
+ 
+
+  
+  
+  
+  
+  
